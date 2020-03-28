@@ -1,7 +1,7 @@
 connehttps://github.com/santoshyadav198613/DNT-205
 https://github.com/santoshyadav198613/notes/Angular
 
-Mar8
+Mar8 2020
 https://github.com/santoshyadav198613
 https://twitter.com/santoshyadavdev
 https://in.linkedin.com/in/yadavsantosh
@@ -11,12 +11,12 @@ https://dev.to/santoshyadav198613
 
 https://zoom.us/j/907396138
 
-Mar14
+Mar14 2020
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction
 
 https://github.com/santoshyadav198613/dnt-mar14-typescript
 
-Mar15
+Mar15 2020
 https://angular.io/cli
 https://github.com/santoshyadav198613/notes
  
@@ -31,4 +31,5 @@ https://github.com/santoshyadav198613/notes/
 https://indepth.dev/
 https://github.com/ngneat/transloco
 
+28 Mar 2020
 https://indepth.dev/angular-revisited-tree-shakable-components-and-optional-ngmodules/
