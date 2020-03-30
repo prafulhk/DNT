@@ -1,1 +1,21 @@
 <p>employee works!</p>
+{{name}}<!-- Arrays complex data type will not be allowed to use string interpolation -->
+<br>
+<!-- Property Binding -->
+<div [hidden]="isHidden" [innerText]="name">    </div>
+<br>
+<!-- Event Binding -->
+<button (click) = toggle() >Toggle</button>
+<br>
+Employee Details:
+<br>
+{{employee.id}}
+<br>
+{{employee.name}}
+<br>
+{{employee.email}}
+<br>
+{{employee.dob}}
+<br>
+{{employee.salary}}
+<br>
