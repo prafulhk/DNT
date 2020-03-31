@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EmployeeModel } from '../model/employee.model';
+import { EmployeeModel } from './employee.model';
 ;
 @Component({
   selector: 'app-employee',
@@ -26,5 +26,6 @@ export class EmployeeComponent implements OnInit {
   toggle() {
     this.isHidden = !this.isHidden;
   }
+  
 
 }
