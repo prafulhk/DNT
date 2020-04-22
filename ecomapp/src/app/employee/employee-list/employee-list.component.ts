@@ -40,6 +40,6 @@ export class EmployeeListComponent implements OnInit {
   }
   trackByFn(i:number,emp:EmployeeModel)
   {
-    return emp.id;
+    return emp.id
   }
 }

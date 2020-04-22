@@ -1,12 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChildren, ViewChild, QueryList, ElementRef } from '@angular/core';
 import { EmployeeModel } from './employee.model';
+import { HeaderComponent } from '../header/header.component';
 ;
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',
   styleUrls: ['./employee.component.css']
 })
-export class EmployeeComponent implements OnInit {
+export class EmployeeComponent implements OnInit,AfterViewInit {
+  // @ViewChild(HeaderComponent, { static: true }) header: HeaderComponent;
+
+  @ViewChildren(HeaderComponent) headerChildren: QueryList<HeaderComponent>;
+
+  @ViewChild(HeaderComponent) header: HeaderComponent;
+
+  @ViewChild('errorDiv', { static: true }) errorDiv: ElementRef;
+
+
+
   isHidden: boolean = false;
   name = "Praful"
 
@@ -25,6 +36,16 @@ export class EmployeeComponent implements OnInit {
   }
   toggle() {
     this.isHidden = !this.isHidden;
+  }
+
+  ngAfterViewInit(): void {
+    console.log(this.headerChildren);
+    // console.log(this.header);
+    // this.header.title = 'Employee';
+    // this.errorDiv.nativeElement.innerText = 'Some error';
+    this.headerChildren.forEach((header)=> {
+      header.title = 'New Employee';
+    });
   }
   
 
